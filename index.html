@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Anatomy Learning FKUH</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <!-- Styles -->
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="/assets/app.css">
+
+        <style>
+            body {
+                font-family: 'Nunito';
+            }
+        </style>
+    </head>
+    <body class="antialiased">
+        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center sm:pt-0">
+            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
+                    <img src="/assets/images/logo.png" alt="Anatomi Learning" class="h-16 w-auto text-gray-700 sm:h-20">
+                </div>
+
+                <div class="mt-8 bg-white overflow-hidden shadow sm:rounded-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                <div class="ml-4 text-lg leading-7 font-semibold">
+                                    <a href="https://med.anatomylearningfkuh.com" class="text-gray-900">Medical</a>
+                                </div>
+                            </div>
+
+                            <div class="ml-12">
+                                <div class="mt-2 text-gray-600 text-sm">
+                                    <p>Anatomi Learning - Fakultas Kedokteran Universitas Hasanuddin</p>
+
+                                    Download for :
+                                    <a href="https://play.google.com/store/apps/details?id=androidmakassar.medanatomylearning" class="badge badge-success" target="_blank">
+                                        Android
+                                    </a>
+                                    <a href="https://apps.apple.com/id/app/anatomy-learning-fkuh-med/id1534706947" class="badge badge-success" target="_blank">
+                                        iOS
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 border-t border-gray-200 md:border-t-0 md:border-l">
+                            <div class="flex items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                <div class="ml-4 text-lg leading-7 font-semibold">
+                                    <a href="https://vokasi.anatomylearningfkuh.com" class="text-gray-900">Vokasi</a>
+                                </div>
+                            </div>
+
+                            <div class="ml-12">
+                                <div class="mt-2 text-gray-600 text-sm">
+                                    <p>Anatomi Learning - D3 Vokasi Kesehatan Terpadu Universitas Hasanuddin</p>
+                                    Download for :
+
+                                    <a href="https://play.google.com/store/apps/details?id=androidmakassar.vokasianatomylearning" class="badge badge-success" target="_blank">
+                                        Android
+                                    </a>
+                                    <span href="#" class="badge badge-secondary" download>
+                                        iOS
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 border-t border-gray-200">
+                            <div class="flex items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                <div class="ml-4 text-lg leading-7 font-semibold">
+                                    <a href="https://dent.anatomylearningfkuh.com/" class="text-gray-900">Dentistry</a>
+                                </div>
+                            </div>
+
+                            <div class="ml-12">
+                                <div class="mt-2 text-gray-600 text-sm">
+                                    <p>Anatomi Learning - Fakultas Kedokteran Gigi Universitas Hasanuddin</p>
+
+                                    Download for :
+                                    <a href="https://play.google.com/store/apps/details?id=androidmakassar.dentanatomylearning" class="badge badge-success" target="_blank">
+                                        Android
+                                    </a>
+                                    <span href="#" class="badge badge-secondary" download>
+                                        iOS
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 border-t border-gray-200 md:border-l">
+                            <div class="flex items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900">
+                                    Nursery
+                                </div>
+                            </div>
+
+                            <div class="ml-12">
+                                <div class="mt-2 text-gray-600 text-sm">
+                                    <i>coming soon..</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
+                    <div class="text-center text-sm text-gray-600 sm:text-left">
+                        <div class="items-center">
+                            By
+                            <a href="http://smartinovasi.com" target="_blank" class="text-gray-900">
+                                <b><u>Smartinovasi.com</u></b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/assets/warning.js"></script>
+    </body>
+</html>
